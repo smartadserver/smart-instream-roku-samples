@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<component name="PlayerTask" extends="Task">
+	<script type="text/brightscript" uri="pkg:/components/PlayerTask.brs" />
+	<script type = "text/brightscript" uri = "pkg:/components/SmartAdServer.brs"/>
+	<interface>
+    	<field id="video" type="node" />
+	</interface>
+</component>

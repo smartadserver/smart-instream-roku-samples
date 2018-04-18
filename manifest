@@ -1,0 +1,11 @@
+title=SVSRokuSample
+major_version=1
+minor_version=0
+build_version=1
+bs_libs_required=roku_ads_lib
+ui_resolutions=hd
+mm_icon_focus_hd=pkg:/images/iconHD.png
+mm_icon_focus_sd=pkg:/images/iconSD.png
+splash_screen_hd=pkg:/images/splashHD.png
+splash_screen_sd=pkg:/images/splashSD.png
+splash_color=#FFFFFF
