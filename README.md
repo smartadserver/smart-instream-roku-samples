@@ -5,11 +5,12 @@ It is based on the RAF Video Node Sample available on Roku's developer website.
 
 ## How does it work
 
-Shipped with this sample you'll find the SmartAdServer.brs script that contains 4 functions. 
+Shipped with this sample you'll find the SmartAdServer.brs script that contains 5 functions. 
 - BuildAdCallURL() to create the minimum required URL to perform ad calls requesting a VAST 3.0 response.
 - AddAdvertisingMacrosInfosToAdCallURL() to add Roku custom identifiers to the ad call URL.
 - AddRTBParametersToAdCallURL() to add RTB parameters to this URL.
 - AddContentDataParametersToAdCallURL to add Content data parameters to this URL.
+- AddPrivacyParametersToAdCallURL() to add privacy (and consent) parameters to this URL.
 
 PlayerTask (extends Task) in this sample is responsible for playing the main content and requesting / displaying the ads. 
 The code handles pre-roll, mid-roll and post-roll ads on the same video content.

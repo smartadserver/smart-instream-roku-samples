@@ -40,6 +40,7 @@ sub playContentWithAds()
     adCallUrl = AddAdvertisingMacrosInfosToAdCallURL(adCallUrl, "SmartOnRoku")
     adCallUrl = AddRTBParametersToAdCallURL(adCallUrl, 1920, 1080, 10, 60, 200, 5000, 1, "domain.com")
     adCallUrl = AddContentDataParametersToAdCallURL(adCallUrl, "contentID", "title", "type", "category", 60, 1, 1, "rating", "providerid", "providername", "distribid", "distribname", "tag1,tag2", "external", "cms")
+    adCallUrl = AddPrivacyParametersToAdCallURL(adCallUrl, "IABTCFBase64urlConsentString")
 
     print "AdCallURL: "; adCallUrl
 

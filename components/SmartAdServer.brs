@@ -176,3 +176,20 @@ Function AddContentDataParametersToAdCallURL(adCallURL as String, contentID as S
 End Function
 
 
+REM ****************************************************************
+REM Add Privacy parameters to a previously generated AdCallURL
+REM - adCallURL: the URL you got from the previous function BuildAdCallURL()
+REM - gdprConsentString: the base64url encoded consent string conform to IAB Transparency and Consent Framework specifications.
+REM ****************************************************************
+
+Function AddPrivacyParametersToAdCallURL(adCallURL as String, gdprConsentString as String) As String
+    privacyAdCallURL = adCallURL
+
+    ' Append function parameters
+    ' gdprConsentString
+    privacyAdCallURL = privacyAdCallURL + "&" + "gdpr_consent=" + gdprConsentString
+    
+    return privacyAdCallURL
+
+End Function
+
